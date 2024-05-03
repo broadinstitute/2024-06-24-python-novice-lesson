@@ -1,153 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/01-intro.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/01-intro.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/02-numpy.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/02-numpy.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/03-matplotlib.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/03-matplotlib.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/04-lists.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/04-lists.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/05-loop.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/05-loop.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/06-files.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/06-files.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/07-cond.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/07-cond.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/08-func.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/08-func.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/09-errors.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/09-errors.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/10-defensive.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/10-defensive.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/11-debugging.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/11-debugging.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/12-cmdline.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/12-cmdline.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/404.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/404.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/CODE_OF_CONDUCT.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/LICENSE.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/additional_material.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/additional_material.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/aio.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/aio.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/discuss.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/discuss.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/extra_exercises.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/extra_exercises.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/images.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/images.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/index.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/index.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/01-intro.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/01-intro.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/02-numpy.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/02-numpy.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/03-matplotlib.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/03-matplotlib.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/04-lists.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/04-lists.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/05-loop.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/05-loop.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/06-files.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/06-files.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/07-cond.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/07-cond.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/08-func.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/08-func.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/09-errors.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/09-errors.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/10-defensive.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/10-defensive.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/11-debugging.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/11-debugging.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/12-cmdline.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/12-cmdline.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/404.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/404.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/LICENSE.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/additional_material.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/additional_material.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/aio.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/aio.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/discuss.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/discuss.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/extra_exercises.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/extra_exercises.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/images.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/images.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/index.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/index.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/instructor-notes.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/instructor-notes.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/key-points.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/key-points.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/profiles.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/profiles.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/reference.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/reference.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor-notes.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor-notes.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/key-points.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/key-points.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/profiles.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/profiles.html</loc>
   </url>
   <url>
-    <loc>https://swcarpentry.github.io/python-novice-inflammation/reference.html</loc>
+    <loc>https://broadinstitute.github.io/2024-06-24-python-novice-lesson/reference.html</loc>
   </url>
 </urlset>

@@ -404,7 +404,7 @@ off-site.</p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Virtual Private Network (VPN) Access</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>To reach to the Broad login servers when you are off-site, you will
 connect to the Broad VPN to access internal Broad resources.</p>
@@ -452,7 +452,7 @@ workshop.</p>
   <h3 class="accordion-header" id="headingSpoiler2">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Terminal Setup</h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>Bash is the default shell on most Linux distributions and older
 versions of macOS. Windows users will need to install WSL to provide a
@@ -476,14 +476,14 @@ Unix-like environment.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
 <p>The default shell is usually Bash, but if your machine is set up
 differently you can run it by opening a terminal and typing
 <code>bash</code> followed by the <kbd>enter</kbd> key. There is no need
 to install anything. Look for Terminal in your applications to start the
 Bash shell.</p>
 </div>
-<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
 <p>Open Terminal from <code>/Applications/Utilities</code> or Spotlight
 Search. In versions before Catalina, Bash is the default shell, so you
 do not need to do anything further. In Catalina and onwards, the default
@@ -491,7 +491,7 @@ shell is zsh, which is similar but may behave differently from Bash in
 some cases. To switch to Bash, enter the command <code>bash</code> in
 your terminal window followed by the <kbd>enter</kbd> key.</p>
 </div>
-<div id="nav-tabpanel-1-3" class="tab-pane" aria-labelledby="nav-tab-1-3" role="tabpanel">
+<div id="nav-tabpanel-1-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-3">
 <p>On Windows, CMD or PowerShell are normally available as the default
 shell environments. These use a syntax and set of applications unique to
 Windows systems and are incompatible with the more widely used Unix
@@ -565,25 +565,25 @@ to the Broad VPN.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <ol style="list-style-type: decimal"><li>Open Terminal from <code>/Applications/Utilities</code> or Spotlight
 Search.</li>
 <li>Type <kbd>ssh &lt;username&gt;<span class="citation">@login.broadinstitute.org</span></kbd> [Example: ssh <a href="mailto:jcase@login.broadinstitute.org" class="email">jcase@login.broadinstitute.org</a> ]</li>
 <li>Enter your Broad password when prompted.</li>
 </ol></div>
-<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
 <ol style="list-style-type: decimal"><li>Most Linux systems use Ctrl-Alt-T to start a Linux Terminal
 session.</li>
 <li>On the command line, type <kbd>ssh &lt;username&gt;<span class="citation">@login.broadinstitute.org</span></kbd> [Example: ssh <a href="mailto:jcase@login.broadinstitute.org" class="email">jcase@login.broadinstitute.org</a> ]</li>
 <li>Enter your Broad password when prompted.</li>
 </ol></div>
-<div id="nav-tabpanel-2-3" class="tab-pane" aria-labelledby="nav-tab-2-3" role="tabpanel">
+<div id="nav-tabpanel-2-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-3">
 <ol style="list-style-type: decimal"><li>Open WSL from the start menu item or by typing <kbd>wsl</kbd> from a
 command prompt or PowerShell.</li>
 <li>Type <kbd>ssh &lt;username&gt;<span class="citation">@login.broadinstitute.org</span></kbd> [Example: ssh <a href="mailto:jcase@login.broadinstitute.org" class="email">jcase@login.broadinstitute.org</a> ]</li>
 <li>Enter your Broad password when prompted.</li>
 </ol></div>
-<div id="nav-tabpanel-2-4" class="tab-pane" aria-labelledby="nav-tab-2-4" role="tabpanel">
+<div id="nav-tabpanel-2-4" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-4">
 <ol style="list-style-type: decimal"><li>Launch <a href="https://broad.service-now.com/sp?sys_kb_id=072a3dc613eb0f80449fb86f3244b0e8&amp;id=kb_article_view&amp;sysparm_rank=1&amp;sysparm_tsqueryId=f5b28afe47714e50a5d9a8ba216d43e9" class="external-link">SecureCRT</a>
 from the Start menu</li>
 <li>Go to the File menu and select “Connect”. Select the “New Session””
@@ -635,7 +635,7 @@ workshop.</p>
   <h3 class="accordion-header" id="headingSpoiler9">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>to be updated by cb-admins</h3>
 </button>
-<div id="collapseSpoiler9" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler9" aria-labelledby="headingSpoiler9">
+<div id="collapseSpoiler9" class="accordion-collapse collapse" aria-labelledby="headingSpoiler9" data-bs-parent="#accordionSpoiler9">
 <div class="accordion-body">
 <div class="section level2">
 <h2 id="launch-python-interface">Launch Python interface<a class="anchor" aria-label="anchor" href="#launch-python-interface"></a></h2>
@@ -656,7 +656,7 @@ ways:</p>
   <h3 class="accordion-header" id="headingSpoiler3">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Anaconda Navigator</h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Launch Anaconda Navigator. It might ask you if you’d like to send
 anonymized usage information to Anaconda developers: <img src="fig/anaconda-navigator-first-launch.png" alt="Anaconda Navigator first launch" class="figure"> Make your choice and click “Ok,
@@ -679,7 +679,7 @@ selecting “Python 3”: <img src="fig/jupyter-notebook-launch-notebook.png" al
   <h3 class="accordion-header" id="headingSpoiler8">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Command line (Terminal)</h3>
 </button>
-<div id="collapseSpoiler8" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler8" aria-labelledby="headingSpoiler8">
+<div id="collapseSpoiler8" class="accordion-collapse collapse" aria-labelledby="headingSpoiler8" data-bs-parent="#accordionSpoiler8">
 <div class="accordion-body">
 <p>1. Navigate to the <code>data</code> directory:</p>
 <div id="accordionSpoiler4" class="accordion spoiler-accordion accordion-flush">
@@ -688,7 +688,7 @@ selecting “Python 3”: <img src="fig/jupyter-notebook-launch-notebook.png" al
   <h3 class="accordion-header" id="headingSpoiler4">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Unix shell</h3>
 </button>
-<div id="collapseSpoiler4" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler4" aria-labelledby="headingSpoiler4">
+<div id="collapseSpoiler4" class="accordion-collapse collapse" aria-labelledby="headingSpoiler4" data-bs-parent="#accordionSpoiler4">
 <div class="accordion-body">
 <p>If you’re using a Unix shell application, such as Terminal app in
 macOS, Console or Terminal in Linux, or <a href="https://gitforwindows.org" class="external-link">Git Bash</a> on Windows, execute the
@@ -708,7 +708,7 @@ following command:</p>
   <h3 class="accordion-header" id="headingSpoiler5">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Command Prompt (Windows)</h3>
 </button>
-<div id="collapseSpoiler5" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler5" aria-labelledby="headingSpoiler5">
+<div id="collapseSpoiler5" class="accordion-collapse collapse" aria-labelledby="headingSpoiler5" data-bs-parent="#accordionSpoiler5">
 <div class="accordion-body">
 <p>On Windows, you can use its native Command Prompt program. The
 easiest way to start it up is pressing <kbd>Windows Logo
@@ -727,7 +727,7 @@ navigate to the <code>data</code> folder:</p>
   <h3 class="accordion-header" id="headingSpoiler6">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Unix shell</h3>
 </button>
-<div id="collapseSpoiler6" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler6" aria-labelledby="headingSpoiler6">
+<div id="collapseSpoiler6" class="accordion-collapse collapse" aria-labelledby="headingSpoiler6" data-bs-parent="#accordionSpoiler6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -744,7 +744,7 @@ navigate to the <code>data</code> folder:</p>
   <h3 class="accordion-header" id="headingSpoiler7">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Command Prompt (Windows)</h3>
 </button>
-<div id="collapseSpoiler7" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler7" aria-labelledby="headingSpoiler7">
+<div id="collapseSpoiler7" class="accordion-collapse collapse" aria-labelledby="headingSpoiler7" data-bs-parent="#accordionSpoiler7">
 <div class="accordion-body">
 <pre class="source"><code>python -m notebook</code></pre>
 </div>
@@ -803,12 +803,12 @@ Windows</a>, you have to call Python <em>via</em>
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="FIXME/edit/main/index.html">Edit on GitHub</a>
+        <a href="https://github.com/broadinstitute/2024-06-24-python-novice-lesson/edit/main/index.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="FIXME/blob/main/CONTRIBUTING.html">Contributing</a>
-        | <a href="FIXME/">Source</a></p>
-				<p><a href="FIXME/blob/main/CITATION">Cite</a> | <a href="mailto:cb-admin@broadinstitute.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/broadinstitute/2024-06-24-python-novice-lesson/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/broadinstitute/2024-06-24-python-novice-lesson/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/broadinstitute/2024-06-24-python-novice-lesson/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:cb-admin@broadinstitute.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -827,15 +827,15 @@ Windows</a>, you have to call Python <em>via</em>
     {
   "@context": "https://schema.org",
   "@type": "TrainingMaterial",
-  "@id": "https://swcarpentry.github.io/python-novice-inflammation/index.html",
+  "@id": "https://broadinstitute.github.io/2024-06-24-python-novice-lesson/index.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "lesson",
   "name": "Programming with Python",
   "creativeWorkStatus": "active",
-  "url": "https://swcarpentry.github.io/python-novice-inflammation/index.html",
-  "identifier": "https://swcarpentry.github.io/python-novice-inflammation/index.html",
+  "url": "https://broadinstitute.github.io/2024-06-24-python-novice-lesson/index.html",
+  "identifier": "https://broadinstitute.github.io/2024-06-24-python-novice-lesson/index.html",
   "dateCreated": "2024-05-03",
   "dateModified": "2024-05-03",
   "datePublished": "2024-05-03"
