@@ -18,9 +18,9 @@ how it is better to automate analysis using functions instead of repeating analy
 steps manually.
 
 The rendered version of the lesson is available at:
-[FIXME](FIXME).
+[https://broadinstitute.github.io/2024-06-24-python-novice-lesson/](https://broadinstitute.github.io/2024-06-24-python-novice-lesson/).
 
-This lesson is also available in [R] and [MATLAB].
+The Carpentries offers versions of this lesson using [R] and [MATLAB].
 
 ## Episodes
 
@@ -64,18 +64,18 @@ under the [MIT license][mit-license]. For more information, see [LICENSE.md](LIC
 [good-practices]: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
 [R]: https://github.com/swcarpentry/r-novice-inflammation
 [MATLAB]: https://github.com/swcarpentry/matlab-novice-inflammation
-[episode01]: https://swcarpentry.github.io/python-novice-inflammation/01-intro/index.html
-[episode02]: https://swcarpentry.github.io/python-novice-inflammation/02-numpy/index.html
-[episode03]: https://swcarpentry.github.io/python-novice-inflammation/03-matplotlib/index.html
-[episode04]: https://swcarpentry.github.io/python-novice-inflammation/04-lists/index.html
-[episode05]: https://swcarpentry.github.io/python-novice-inflammation/05-loop/index.html
-[episode06]: https://swcarpentry.github.io/python-novice-inflammation/06-files/index.html
-[episode07]: https://swcarpentry.github.io/python-novice-inflammation/07-cond/index.html
-[episode08]: https://swcarpentry.github.io/python-novice-inflammation/08-func/index.html
-[episode09]: https://swcarpentry.github.io/python-novice-inflammation/09-errors/index.html
-[episode10]: https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html
-[episode11]: https://swcarpentry.github.io/python-novice-inflammation/11-debugging/index.html
-[episode12]: https://swcarpentry.github.io/python-novice-inflammation/12-cmdline/index.html
+[episode01]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//01-intro/index.html
+[episode02]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//02-numpy/index.html
+[episode03]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//03-matplotlib/index.html
+[episode04]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//04-lists/index.html
+[episode05]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//05-loop/index.html
+[episode06]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//06-files/index.html
+[episode07]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//07-cond/index.html
+[episode08]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//08-func/index.html
+[episode09]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//09-errors/index.html
+[episode10]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//10-defensive/index.html
+[episode11]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//11-debugging/index.html
+[episode12]: https://broadinstitute.github.io/2024-06-24-python-novice-lesson//12-cmdline/index.html
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [mit-license]: https://opensource.org/licenses/mit-license.html
