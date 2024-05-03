@@ -2,12 +2,6 @@
 title: 'Glossary'
 ---
 
-## Glossary
-
-{:auto\_ids}
-[additive color model]{#additive-color-model}
-:   A way to represent colors as the sum of contributions from primary colors
-such as [red, green, and blue](#rgb).
 
 [argument]{#argument}
 :   A value given to a function or program when it runs.

@@ -26,7 +26,7 @@ To see how effective the treatment is we would like to:
 1. Calculate the average inflammation per day across all patients.
 2. Plot the result to discuss and share with colleagues.
 
-![](episodes/fig/lesson-overview.svg "Lesson Overview"){alt='3-step flowchart shows inflammation data records for patients moving to the Analysis stepwhere a heat map of provided data is generated moving to the Conclusion step that asks thequestion, How does the medication affect patients?'}
+![](episodes/fig/lesson-overview.svg "Lesson Overview"){alt='3-step flowchart shows inflammation data records for patients moving to the Analysis step where a heat map of provided data is generated moving to the Conclusion step that asks the question, How does the medication affect patients?'}
 
 ### Data Format
 
@@ -65,14 +65,5 @@ The commands in this lesson pertain to any officially supported Python version, 
 3\.8+**.  Newer versions usually have better error printouts, so using newer Python versions is
 recommend if possible.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-### Getting Started
-
-To get started, follow the directions on the [Setup](learners/setup.md) page to download data
-and install a Python interpreter.
-
-
-
 
