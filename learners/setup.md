@@ -12,24 +12,6 @@ To participate in this lesson, we will use [Colab notebooks](https://colab.resea
 
  will need to import our own resources into Colab, such as our simulated data. In order to do this, we will use Google drive. Because we will need to grant Colab access to our Google Drive data, **we strongly recommend creating an ad-hoc ("throwaway") Gmail account.** That way, we do not risk sharing or altering any sensitive data that we might have on our Broad Institute Google accounts.
 
-:::::::::::::::::::  prereq
-:::::::::::::::::::::::::::::::::::::::::: spoiler
-
-## Virtual Private Network (VPN) Access
-
-To reach to the Broad login servers when you are off-site, you will connect to the Broad VPN to access internal Broad resources.
-
-#### [VPN Installation](https://intranet.broadinstitute.org/bits/service-catalog/networking/vpn)
-
-- Use Broad Self Service ([Mac](https://intranet.broadinstitute.org/bits/service-catalog/applications/self-service-software-mac) or [Windows](https://intranet.broadinstitute.org/bits/service-catalog/applications/software-center-windows-self-service)) to install the **Cisco AnyConnect Secure Mobility Client** software <p><p>
-OR
-- Visit <https://vpn.broadinstitute.org> and follow the prompts.
-
-You will also need to [set up DUO two-factor authentication](https://broad.service-now.com/sp?id=kb_article&sys_id=7541196213ffe280df1955912244b0a2) or [Google 2FA](https://broad.service-now.com/sp?id=kb_article&sysparm_article=KB0011056) to use the Broad VPN. Contact [BITS](https://intranet.broadinstitute.org/bits) for troubleshooting if you have a Broad-issued machine.
-
-If you can't access the documentation linked above or can't connect to the Broad VPN using your Broad credentials, please let the [workshop organizers](mailto:cb-admin@broadinstitute.org) know so we can assess whether you will be able to participate in the workshop.
-::::::::::::::::::::::::::::::::::::::::::::::::::
-:::::::::::::::::::
 
 :::::::::::::::::::  prereq
 :::::::::::::::::::::::::::::::::::::::::: spoiler
