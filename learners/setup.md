@@ -13,8 +13,6 @@ To participate in this lesson, we will use [Colab notebooks](https://colab.resea
 We will need to import our own resources into Colab, such as our simulated data. In order to do this, we will use Google drive. Because we will need to grant Colab access to our Google Drive data, **we strongly recommend creating an ad-hoc ("throwaway") Gmail account.** That way, we do not risk sharing or altering any sensitive data that we might have on our Broad Institute Google accounts.
 
 
-:::
-
 ## Obtain lesson materials
 
 1. Download [python-novice-inflammation-data.zip][zipfile1]
