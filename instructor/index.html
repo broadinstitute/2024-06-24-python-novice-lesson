@@ -505,285 +505,63 @@ software and data used in this lesson are freely available online, and
 instructions on how to obtain them are provided below.</p>
 <div class="section level1">
 <h1 id="setup"><a name="#setup">Setup</a><a class="anchor" aria-label="anchor" href="#setup"></a></h1>
-<p>To participate in this lesson, you will need a working Unix-like
-shell environment. We will be using Bash (<a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" class="external-link">Bourne Again
-Shell</a>) which is standard on Linux and macOS. Some macOS users
-(Catalina or later) will have zsh (Z shell) as their default version.
-Even if you are a Windows user, learning Bash will open up a powerful
-set of tools on your personal machine, and familiarize you with the
-standard remote interface used on most servers and supercomputers.</p>
-<p>For the workshop, we will use the Broad’s <a href="https://intranet.broadinstitute.org/bits/service-catalog/scientific-computing/login-servers" class="external-link">login
-servers</a>. To access those machines, your laptop needs to be on the
-<strong>Broad-Internal</strong> wireless network when you are on-site OR
-on the Broad VPN if you have a non-Broad-issued computer or are
-off-site.</p>
-<div id="prereq1" class="callout prereq">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Prerequisite<a class="anchor" aria-label="anchor" href="#prereq1"></a>
-</h3>
-<div class="callout-content">
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">
-<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Virtual Private Network (VPN) Access</h3>
-</button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
-<div class="accordion-body">
-<p>To reach to the Broad login servers when you are off-site, you will
-connect to the Broad VPN to access internal Broad resources.</p>
-<div class="section level4">
-<h4 id="vpn-installation"><a href="https://intranet.broadinstitute.org/bits/service-catalog/networking/vpn" class="external-link">VPN
-Installation</a><a class="anchor" aria-label="anchor" href="#vpn-installation"></a></h4>
-<ul><li>Use Broad Self Service (<a href="https://intranet.broadinstitute.org/bits/service-catalog/applications/self-service-software-mac" class="external-link">Mac</a>
-or <a href="https://intranet.broadinstitute.org/bits/service-catalog/applications/software-center-windows-self-service" class="external-link">Windows</a>)
-to install the <strong>Cisco AnyConnect Secure Mobility Client</strong>
-software
-<p>
-</p>
-<p>
-OR</p>
-</li>
-<li>Visit <a href="https://vpn.broadinstitute.org" class="external-link uri">https://vpn.broadinstitute.org</a> and follow the
-prompts.</li>
-</ul><p>You will also need to <a href="https://broad.service-now.com/sp?id=kb_article&amp;sys_id=7541196213ffe280df1955912244b0a2" class="external-link">set
-up DUO two-factor authentication</a> or <a href="https://broad.service-now.com/sp?id=kb_article&amp;sysparm_article=KB0011056" class="external-link">Google
-2FA</a> to use the Broad VPN. Contact <a href="https://intranet.broadinstitute.org/bits" class="external-link">BITS</a> for
-troubleshooting if you have a Broad-issued machine.</p>
-<p>If you can’t access the documentation linked above or can’t connect
-to the Broad VPN using your Broad credentials, please let the <a href="mailto:cb-admin@broadinstitute.org">workshop organizers</a> know
-so we can assess whether you will be able to participate in the
-workshop.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="prereq2" class="callout prereq">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Prerequisite<a class="anchor" aria-label="anchor" href="#prereq2"></a>
-</h3>
-<div class="callout-content">
-<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
-  <h3 class="accordion-header" id="headingSpoiler2">
-<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Terminal Setup</h3>
-</button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
-<div class="accordion-body">
-<p>Bash is the default shell on most Linux distributions and older
-versions of macOS. Windows users will need to install WSL to provide a
-Unix-like environment.</p>
-<div class="tabs">
-<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-1-1">
-  Linux
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-1-2">
-  Mac
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-1-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-3" type="button" role="tab" aria-controls="nav-tabpanel-1-3" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-1-3">
-  Windows
-  </h3>
-</button>
-</div>
-</nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
-<p>The default shell is usually Bash, but if your machine is set up
-differently you can run it by opening a terminal and typing
-<code>bash</code> followed by the <kbd>enter</kbd> key. There is no need
-to install anything. Look for Terminal in your applications to start the
-Bash shell.</p>
-</div>
-<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
-<p>Open Terminal from <code>/Applications/Utilities</code> or Spotlight
-Search. In versions before Catalina, Bash is the default shell, so you
-do not need to do anything further. In Catalina and onwards, the default
-shell is zsh, which is similar but may behave differently from Bash in
-some cases. To switch to Bash, enter the command <code>bash</code> in
-your terminal window followed by the <kbd>enter</kbd> key.</p>
-</div>
-<div id="nav-tabpanel-1-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-3">
-<p>On Windows, CMD or PowerShell are normally available as the default
-shell environments. These use a syntax and set of applications unique to
-Windows systems and are incompatible with the more widely used Unix
-utilities. However, a Bash shell can be installed on Windows to provide
-a Unix-like environment. For this lesson we suggest using <a href="https://learn.microsoft.com/en-us/windows/wsl/install" class="external-link">Windows
-Subsystem for Linux (WSL)</a>. Open PowerShell or Windows Command Prompt
-in administrator mode by right-clicking and selecting “Run as
-administrator”, enter <kbd>wsl –install</kbd>, then restart your
-machine.</p>
-<p>Alternatively, you can install Git Bash, part of the <a href="https://gitforwindows.org/" class="external-link">Git for Windows</a> packagee</p>
-<ul><li>Download the latest Git for Windows <a href="https://gitforwindows.org/" class="external-link">installer</a>.</li>
-<li>Double click the <code>.exe</code> file to run the installer (for
-example, <code>Git-2.42.0.2-64-bit.exe</code>) using the default
-settings.</li>
-<li>Once installed, open the shell by selecting Git Bash from the start
-menu (in the Git folder).</li>
-</ul><p>You can also run Bash commands on a remote computer or server that
-already has a Unix Shell from your Windows machine. This can be done
-through a Secure Shell (SSH) client. One client available for free for
-Windows is <a href="https://www.putty.org/" class="external-link">PuTTY</a>, which is also
-available through the <a href="https://apps.microsoft.com/detail/xpfnzksklbp7rj?hl=en-us&amp;gl=US" class="external-link">Microsoft
-store</a>.</p>
-<p>If you encounter issues, the Carpentries has a <a href="https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions" class="external-link">Configuration
-Problems and Solutions wiki page</a> that may help.</p>
-<p>Broad recommends the SecurtCRT terminal application for Broad-issued
-Windows machines. Broadies can download through the <a href="https://intranet.broadinstitute.org/bits/service-catalog/applications/software-center-windows-self-service" class="external-link">Windows
-10 Software Center</a>. :</p>
-<ol style="list-style-type: decimal"><li>Click on the Windows logo.</li>
-<li>Click on All Programs &gt; Microsoft System Center &gt;
-Configuration Manager &gt; Software Center</li>
-<li>Locate and select SecureCRT, then click on “Install”.</li>
-</ol><p>For help with installation on Broad-issued Windows machines, check
-the <a href="https://intranet.broadinstitute.org/bits/service-catalog/applications/software-center-windows-self-service" class="external-link">troubleshooting
-section</a> or contact <a href="https://intranet.broadinstitute.org/bits" class="external-link">BITS</a>.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section level2">
-<h2 id="testing-broad-login-server-access">Testing Broad Login Server access<a class="anchor" aria-label="anchor" href="#testing-broad-login-server-access"></a></h2>
-<p>If you are on-site, connect to the <strong>Broad-Internal</strong>
-wireless network. If you are off-site, <a href="https://intranet.broadinstitute.org/bits/service-catalog/networking/vpn" class="external-link">connect</a>
-to the Broad VPN.</p>
-<div class="tabs">
-<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-2-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-1" type="button" role="tab" aria-controls="nav-tabpanel-2-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-2-1">
-  Mac
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-2-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-2" type="button" role="tab" aria-controls="nav-tabpanel-2-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-2-2">
-  Linux
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-2-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-3" type="button" role="tab" aria-controls="nav-tabpanel-2-3" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-2-3">
-  Windows - WSL
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-2-4" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-4" type="button" role="tab" aria-controls="nav-tabpanel-2-4" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-2-4">
-  Windows - SecureCRT
-  </h3>
-</button>
-</div>
-</nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
-<ol style="list-style-type: decimal"><li>Open Terminal from <code>/Applications/Utilities</code> or Spotlight
-Search.</li>
-<li>Type <kbd>ssh &lt;username&gt;<span class="citation">@login.broadinstitute.org</span></kbd> [Example: ssh <a href="mailto:jcase@login.broadinstitute.org" class="email">jcase@login.broadinstitute.org</a> ]</li>
-<li>Enter your Broad password when prompted.</li>
-</ol></div>
-<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
-<ol style="list-style-type: decimal"><li>Most Linux systems use Ctrl-Alt-T to start a Linux Terminal
-session.</li>
-<li>On the command line, type <kbd>ssh &lt;username&gt;<span class="citation">@login.broadinstitute.org</span></kbd> [Example: ssh <a href="mailto:jcase@login.broadinstitute.org" class="email">jcase@login.broadinstitute.org</a> ]</li>
-<li>Enter your Broad password when prompted.</li>
-</ol></div>
-<div id="nav-tabpanel-2-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-3">
-<ol style="list-style-type: decimal"><li>Open WSL from the start menu item or by typing <kbd>wsl</kbd> from a
-command prompt or PowerShell.</li>
-<li>Type <kbd>ssh &lt;username&gt;<span class="citation">@login.broadinstitute.org</span></kbd> [Example: ssh <a href="mailto:jcase@login.broadinstitute.org" class="email">jcase@login.broadinstitute.org</a> ]</li>
-<li>Enter your Broad password when prompted.</li>
-</ol></div>
-<div id="nav-tabpanel-2-4" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-4">
-<ol style="list-style-type: decimal"><li>Launch <a href="https://broad.service-now.com/sp?sys_kb_id=072a3dc613eb0f80449fb86f3244b0e8&amp;id=kb_article_view&amp;sysparm_rank=1&amp;sysparm_tsqueryId=f5b28afe47714e50a5d9a8ba216d43e9" class="external-link">SecureCRT</a>
-from the Start menu</li>
-<li>Go to the File menu and select “Connect”. Select the “New Session””
-button.</li>
-<li>Within the New Session Wizard window, select SSH2 at the Protocol
-toggle and click Next.</li>
-<li>Within the Hostname field, enter login.broadinstitute.org. Leave the
-Port and Firewall fields set to their defaults. Within the username
-field, enter your Broad username and click Next.</li>
-<li>Leave the SecureFX protocol field as is (eg. SFTP), click Next.</li>
-<li>Leave the session name field as it is, or rename it to something
-shorter. Click the Finish button.</li>
-<li>X11 setup (for future reference, not needed for this workshop):
-Select the newly created connection entry and click the Properties icon
-button. The Session Options window will appear. Select Remote/X11 from
-the menu on the left, check Forward X11 packets. Click the OK button to
-close the window.</li>
-<li>Finally, select your session and click the Connect button. Enter
-your password to log on.</li>
-</ol></div>
-</div>
-</div>
-</div>
+<p>To participate in this lesson, we will use <a href="https://colab.research.google.com/" class="external-link">Colab notebooks</a>. Colab is
+a cloud-based environment where you can run scripting languages such as
+Python, create small segments of code, annotate them with notes and rich
+text, and return to your work later.</p>
+<p>will need to import our own resources into Colab, such as our
+simulated data. In order to do this, we will use Google drive. Because
+we will need to grant Colab access to our Google Drive data, <strong>we
+strongly recommend creating an ad-hoc (“throwaway”) Gmail
+account.</strong> That way, we do not risk sharing or altering any
+sensitive data that we might have on our Broad Institute Google
+accounts.</p>
 <div class="section level2">
 <h2 id="obtain-lesson-materials">Obtain lesson materials<a class="anchor" aria-label="anchor" href="#obtain-lesson-materials"></a></h2>
 <ol style="list-style-type: decimal"><li>Download <a href="../data/python-novice-inflammation-data.zip">python-novice-inflammation-data.zip</a>
 and <a href="../files/code/python-novice-inflammation-code.zip">python-novice-inflammation-code.zip</a>.</li>
-<li>Create a folder called <code>swc-python</code> in your home
-directory.</li>
+<li>Create a folder called <code>swc-python</code> in your computer’s
+home directory.</li>
 <li>Move downloaded files to <code>swc-python</code>.</li>
 <li>Unzip the files.</li>
-</ol><p>You should see two folders called <code>data</code> and
-<code>code</code> in the <code>swc-python</code> directory.</p>
-<div class="section level4">
-<h4 id="show-your-successful-access">Show your successful access<a class="anchor" aria-label="anchor" href="#show-your-successful-access"></a></h4>
-<ol style="list-style-type: decimal"><li>Type <kbd>touch
-/broad/hptmp/computing_basics_python/&lt;username&gt;_was_here</kbd>
-</li>
-<li>Type <kbd>ls /broad/hptmp/computing_basics_python</kbd> Did you
-leave your mark?</li>
-<li>Type <kbd>exit</kbd> to leave the server.</li>
-</ol><p>If you were unable to access the Broad login servers, please let the
-<a href="mailto:cb-admin@broadinstitute.org">workshop organizers</a>
-know so we can help you troubleshoot before the start of the
-workshop.</p>
-<div id="accordionSpoiler9" class="accordion spoiler-accordion accordion-flush">
+<li>Log into <a href="https://drive.google.com/drive/my-drive" class="external-link">Google
+Drive</a> using the Gmail account you created for this course. You may
+want to use a private browsing window to do this, if you usually use
+your Broad account when logging in to Drive.</li>
+<li>Upload the lesson content by clicking “+ New” followed by “Folder
+upload.” Select and upload the <code>swc-python</code> folder you just
+created.</li>
+</ol><p>You should see a <code>swc-python</code> folder in “My Drive”, with
+two subfolders called <code>data</code> and <code>code</code> in it.</p>
+<div id="accordionSpoiler7" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler9" aria-expanded="false" aria-controls="collapseSpoiler9">
-  <h3 class="accordion-header" id="headingSpoiler9">
-<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>to be updated by cb-admins</h3>
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler7" aria-expanded="false" aria-controls="collapseSpoiler7">
+  <h3 class="accordion-header" id="headingSpoiler7">
+<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Further reading</h3>
 </button>
-<div id="collapseSpoiler9" class="accordion-collapse collapse" aria-labelledby="headingSpoiler9" data-bs-parent="#accordionSpoiler9">
+<div id="collapseSpoiler7" class="accordion-collapse collapse" aria-labelledby="headingSpoiler7" data-bs-parent="#accordionSpoiler7">
 <div class="accordion-body">
 <div class="section level2">
-<h2 id="launch-python-interface">Launch Python interface<a class="anchor" aria-label="anchor" href="#launch-python-interface"></a></h2>
+<h2 id="python-interfaces">Python interfaces<a class="anchor" aria-label="anchor" href="#python-interfaces"></a></h2>
 <p>To start working with Python, we need to launch a program that will
-interpret and execute our Python commands. Below we list several
-options. If you don’t have a preference, proceed with the top option in
-the list that is available on your machine. Otherwise, you may use any
-interface you like.</p>
+interpret and execute our Python commands. For our purposes today, we
+will use Colab, so you do not need to read further right now. However,
+if you want to do more with Python, you have a variety of options. It is
+a good idea to try out several of these interfaces to get a sense of
+which you prefer.</p>
 </div>
 <div class="section level2">
-<h2 id="option-a-jupyter-notebook">Option A: Jupyter Notebook<a class="anchor" aria-label="anchor" href="#option-a-jupyter-notebook"></a></h2>
+<h2 id="jupyter-notebook">Jupyter Notebook<a class="anchor" aria-label="anchor" href="#jupyter-notebook"></a></h2>
 <p>A Jupyter Notebook provides a browser-based interface for working
-with Python. If you installed Anaconda, you can launch a notebook in two
-ways:</p>
-<div id="accordionSpoiler3" class="accordion spoiler-accordion accordion-flush">
+with Python. Colab is one example of this. If you install Anaconda, you
+can launch a notebook in two ways:</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
-  <h3 class="accordion-header" id="headingSpoiler3">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Anaconda Navigator</h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Launch Anaconda Navigator. It might ask you if you’d like to send
 anonymized usage information to Anaconda developers: <img src="../fig/anaconda-navigator-first-launch.png" alt="Anaconda Navigator first launch" class="figure"> Make your choice and click “Ok,
@@ -800,22 +578,22 @@ selecting “Python 3”: <img src="../fig/jupyter-notebook-launch-notebook.png"
 </div>
 </div>
 </div>
-<div id="accordionSpoiler8" class="accordion spoiler-accordion accordion-flush">
+<div id="accordionSpoiler6" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler8" aria-expanded="false" aria-controls="collapseSpoiler8">
-  <h3 class="accordion-header" id="headingSpoiler8">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler6" aria-expanded="false" aria-controls="collapseSpoiler6">
+  <h3 class="accordion-header" id="headingSpoiler6">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Command line (Terminal)</h3>
 </button>
-<div id="collapseSpoiler8" class="accordion-collapse collapse" aria-labelledby="headingSpoiler8" data-bs-parent="#accordionSpoiler8">
+<div id="collapseSpoiler6" class="accordion-collapse collapse" aria-labelledby="headingSpoiler6" data-bs-parent="#accordionSpoiler6">
 <div class="accordion-body">
 <p>1. Navigate to the <code>data</code> directory:</p>
-<div id="accordionSpoiler4" class="accordion spoiler-accordion accordion-flush">
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler4" aria-expanded="false" aria-controls="collapseSpoiler4">
-  <h3 class="accordion-header" id="headingSpoiler4">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Unix shell</h3>
 </button>
-<div id="collapseSpoiler4" class="accordion-collapse collapse" aria-labelledby="headingSpoiler4" data-bs-parent="#accordionSpoiler4">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>If you’re using a Unix shell application, such as Terminal app in
 macOS, Console or Terminal in Linux, or <a href="https://gitforwindows.org" class="external-link">Git Bash</a> on Windows, execute the
@@ -829,13 +607,13 @@ following command:</p>
 </div>
 </div>
 </div>
-<div id="accordionSpoiler5" class="accordion spoiler-accordion accordion-flush">
+<div id="accordionSpoiler3" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler5" aria-expanded="false" aria-controls="collapseSpoiler5">
-  <h3 class="accordion-header" id="headingSpoiler5">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
+  <h3 class="accordion-header" id="headingSpoiler3">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Command Prompt (Windows)</h3>
 </button>
-<div id="collapseSpoiler5" class="accordion-collapse collapse" aria-labelledby="headingSpoiler5" data-bs-parent="#accordionSpoiler5">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
 <div class="accordion-body">
 <p>On Windows, you can use its native Command Prompt program. The
 easiest way to start it up is pressing <kbd>Windows Logo
@@ -848,13 +626,13 @@ navigate to the <code>data</code> folder:</p>
 </div>
 </div>
 <p>2. Start Jupyter server</p>
-<div id="accordionSpoiler6" class="accordion spoiler-accordion accordion-flush">
+<div id="accordionSpoiler4" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler6" aria-expanded="false" aria-controls="collapseSpoiler6">
-  <h3 class="accordion-header" id="headingSpoiler6">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler4" aria-expanded="false" aria-controls="collapseSpoiler4">
+  <h3 class="accordion-header" id="headingSpoiler4">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Unix shell</h3>
 </button>
-<div id="collapseSpoiler6" class="accordion-collapse collapse" aria-labelledby="headingSpoiler6" data-bs-parent="#accordionSpoiler6">
+<div id="collapseSpoiler4" class="accordion-collapse collapse" aria-labelledby="headingSpoiler4" data-bs-parent="#accordionSpoiler4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -865,13 +643,13 @@ navigate to the <code>data</code> folder:</p>
 </div>
 </div>
 </div>
-<div id="accordionSpoiler7" class="accordion spoiler-accordion accordion-flush">
+<div id="accordionSpoiler5" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler7" aria-expanded="false" aria-controls="collapseSpoiler7">
-  <h3 class="accordion-header" id="headingSpoiler7">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler5" aria-expanded="false" aria-controls="collapseSpoiler5">
+  <h3 class="accordion-header" id="headingSpoiler5">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Command Prompt (Windows)</h3>
 </button>
-<div id="collapseSpoiler7" class="accordion-collapse collapse" aria-labelledby="headingSpoiler7" data-bs-parent="#accordionSpoiler7">
+<div id="collapseSpoiler5" class="accordion-collapse collapse" aria-labelledby="headingSpoiler5" data-bs-parent="#accordionSpoiler5">
 <div class="accordion-body">
 <pre class="source"><code>python -m notebook</code></pre>
 </div>
@@ -887,7 +665,7 @@ and selecting “Python 3” from the drop-down menu: <img src="../fig/jupyter-n
 <p>  <!-- vertical spacer --></p>
 </div>
 <div class="section level2">
-<h2 id="option-b-ipython-interpreter">Option B: IPython interpreter<a class="anchor" aria-label="anchor" href="#option-b-ipython-interpreter"></a></h2>
+<h2 id="ipython-interpreter">IPython interpreter<a class="anchor" aria-label="anchor" href="#ipython-interpreter"></a></h2>
 <p>IPython is an alternative solution situated somewhere in between the
 plain-vanilla Python interpreter and Jupyter Notebook. It provides an
 interactive command-line based interpreter with various convenience
@@ -905,7 +683,6 @@ installed <a href="https://carpentries.github.io/workshop-template/install_instr
 Windows</a>, you have to call Python <em>via</em>
 <code>winpty</code>:</p>
 <pre class="source"><code>winpty python</code></pre>
-</div>
 </div>
 </div>
 </div>
@@ -963,9 +740,9 @@ Windows</a>, you have to call Python <em>via</em>
   "creativeWorkStatus": "active",
   "url": "https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/index.html",
   "identifier": "https://broadinstitute.github.io/2024-06-24-python-novice-lesson/instructor/index.html",
-  "dateCreated": "2024-05-03",
-  "dateModified": "2024-06-11",
-  "datePublished": "2024-06-11"
+  "dateCreated": "2024-06-14",
+  "dateModified": "2024-06-14",
+  "datePublished": "2024-06-14"
 }
 
   </script><script>
