@@ -25,29 +25,20 @@ To participate in this lesson, we will use [Colab notebooks](https://colab.resea
 
 You should see a `swc-python` folder in "My Drive", with two subfolders called `data` and `code` in it.
 
-#### Show your successful access
-
-1. Type <kbd>touch /broad/hptmp/computing_basics_python/\<username\>_was_here</kbd>
-2. Type <kbd>ls /broad/hptmp/computing_basics_python</kbd> Did you leave your mark?
-3. Type <kbd>exit</kbd> to leave the server.
-
-If you were unable to access the Broad login servers, please let the [workshop organizers](mailto:cb-admin@broadinstitute.org) know so we can help you troubleshoot before the start of the workshop.
 
 :::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## to be updated by cb-admins
+## Further reading
 
-## Launch Python interface
+## Python interfaces
 
 To start working with Python, we need to launch a program that will interpret and execute our
-Python commands. Below we list several options. If you don't have a preference, proceed with the
-top option in the list that is available on your machine. Otherwise, you may use any interface
-you like.
+Python commands. For our purposes today, we will use Colab, so you do not need to read further right now. However, if you want to do more with Python, you have a variety of options. It is a good idea to try out several of these interfaces to get a sense of which you prefer.
 
-## Option A: Jupyter Notebook
+## Jupyter Notebook
 
-A Jupyter Notebook provides a browser-based interface for working with Python.
-If you installed Anaconda, you can launch a notebook in two ways:
+A Jupyter Notebook provides a browser-based interface for working with Python. Colab is one example of this.
+If you install Anaconda, you can launch a notebook in two ways:
 
 ::::::::::::::::: spoiler
 
@@ -133,7 +124,7 @@ from the drop-down menu:
 
   <!-- vertical spacer -->
 
-## Option B: IPython interpreter
+## IPython interpreter
 
 IPython is an alternative solution situated somewhere in between the plain-vanilla Python
 interpreter and Jupyter Notebook. It provides an interactive command-line based interpreter with
