@@ -8,9 +8,9 @@ and instructions on how to obtain them are provided below.
 
 # <a name=#setup>Setup</a>
 
-To participate in this lesson, you will need a working Unix-like shell environment. We will be using Bash ([Bourne Again Shell](https://en.wikipedia.org/wiki/Bash_\(Unix_shell\))) which is standard on Linux and macOS. Some macOS users (Catalina or later) will have zsh (Z shell) as their default version. Even if you are a Windows user, learning Bash will open up a powerful set of tools on your personal machine, and familiarize you with the standard remote interface used on most servers and supercomputers.
+To participate in this lesson, we will use [Colab notebooks](https://colab.research.google.com/). Colab is a cloud-based environment where you can run scripting languages such as Python, create small segments of code, annotate them with notes and rich text, and return to your work later.
 
-For the workshop, we will use the Broad's [login servers](https://intranet.broadinstitute.org/bits/service-catalog/scientific-computing/login-servers). To access those machines, your laptop needs to be on the **Broad-Internal** wireless network when you are on-site OR on the Broad VPN if you have a non-Broad-issued computer or are off-site.
+ will need to import our own resources into Colab, such as our simulated data. In order to do this, we will use Google drive. Because we will need to grant Colab access to our Google Drive data, **we strongly recommend creating an ad-hoc ("throwaway") Gmail account.** That way, we do not risk sharing or altering any sensitive data that we might have on our Broad Institute Google accounts.
 
 :::::::::::::::::::  prereq
 :::::::::::::::::::::::::::::::::::::::::: spoiler
@@ -116,11 +116,13 @@ If you are on-site, connect to the **Broad-Internal** wireless network. If you a
 
 1. Download [python-novice-inflammation-data.zip][zipfile1]
   and [python-novice-inflammation-code.zip][zipfile2].
-2. Create a folder called `swc-python` in your home directory.
+2. Create a folder called `swc-python` in your computer's home directory.
 3. Move downloaded files to `swc-python`.
 4. Unzip the files.
+5. Log into [Google Drive](https://drive.google.com/drive/my-drive) using the Gmail account you created for this course. You may want to use a private browsing window to do this, if you usually use your Broad account when logging in to Drive.
+6. Upload the lesson content by clicking "+ New" followed by "Folder upload." Select and upload the `swc-python` folder you just created.
 
-You should see two folders called `data` and `code` in the `swc-python` directory.
+You should see a `swc-python` folder in "My Drive", with two subfolders called `data` and `code` in it.
 
 #### Show your successful access
 
