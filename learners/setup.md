@@ -13,43 +13,6 @@ To participate in this lesson, we will use [Colab notebooks](https://colab.resea
  will need to import our own resources into Colab, such as our simulated data. In order to do this, we will use Google drive. Because we will need to grant Colab access to our Google Drive data, **we strongly recommend creating an ad-hoc ("throwaway") Gmail account.** That way, we do not risk sharing or altering any sensitive data that we might have on our Broad Institute Google accounts.
 
 
-## Testing Broad Login Server access
-
-If you are on-site, connect to the **Broad-Internal** wireless network. If you are off-site, [connect](https://intranet.broadinstitute.org/bits/service-catalog/networking/vpn) to the Broad VPN.
-
-::: tab
-
-### Mac
-
-1. Open Terminal from `/Applications/Utilities` or Spotlight Search.
-1. Type <kbd>ssh \<username\>@login.broadinstitute.org</kbd> [Example: ssh jcase@login.broadinstitute.org ]
-1. Enter your Broad password when prompted.
-
-### Linux
-
-1. Most Linux systems use Ctrl-Alt-T to start a Linux Terminal session.
-1. On the command line, type <kbd>ssh \<username\>@login.broadinstitute.org</kbd> [Example: ssh jcase@login.broadinstitute.org ]
-1. Enter your Broad password when prompted.
-
-### Windows - WSL
-
-1. Open WSL from the start menu item or by typing <kbd>wsl</kbd> from a command prompt or PowerShell.
-1. Type <kbd>ssh \<username\>@login.broadinstitute.org</kbd> [Example: ssh jcase@login.broadinstitute.org ]
-1. Enter your Broad password when prompted.
-
-### Windows - SecureCRT
-
-1. Launch [SecureCRT](https://broad.service-now.com/sp?sys_kb_id=072a3dc613eb0f80449fb86f3244b0e8&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=f5b28afe47714e50a5d9a8ba216d43e9) from the Start menu
-1. Go to the File menu and select "Connect". Select the "New Session"" button.
-1. Within the New Session Wizard window, select SSH2 at the Protocol toggle and click Next.
-1. Within the Hostname field, enter login.broadinstitute.org. Leave the Port and Firewall fields set to their defaults. Within the username field, enter your Broad username and click Next.
-1. Leave the SecureFX protocol field as is (eg. SFTP), click Next.
-1. Leave the session name field as it is, or rename it to something shorter. Click the Finish button.
-1. X11 setup (for future reference, not needed for this workshop): Select the newly created connection entry and click the Properties icon button. The Session Options window will appear. Select Remote/X11 from the menu on the left, check Forward X11 packets. Click the OK button to close the window.
-1. Finally, select your session and click the Connect button. Enter your password to log on.
-
-:::
-
 ## Obtain lesson materials
 
 1. Download [python-novice-inflammation-data.zip][zipfile1]
