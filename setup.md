@@ -10,20 +10,19 @@ and instructions on how to obtain them are provided below.
 
 To participate in this lesson, we will use [Colab notebooks](https://colab.research.google.com/). Colab is a cloud-based environment where you can run scripting languages such as Python, create small segments of code, annotate them with notes and rich text, and return to your work later.
 
- will need to import our own resources into Colab, such as our simulated data. In order to do this, we will use Google drive. Because we will need to grant Colab access to our Google Drive data, **we strongly recommend creating an ad-hoc ("throwaway") Gmail account.** That way, we do not risk sharing or altering any sensitive data that we might have on our Broad Institute Google accounts.
+We will need to import our own resources into Colab, such as our simulated data. In order to do this, we will use Google drive. Because we will need to grant Colab access to our Google Drive data, **we strongly recommend creating an ad-hoc ("throwaway") Gmail account.** That way, we do not risk sharing or altering any sensitive data that we might have on our Broad Institute Google accounts.
 
 
 ## Obtain lesson materials
 
 1. Download [python-novice-inflammation-data.zip][zipfile1]
-  and [python-novice-inflammation-code.zip][zipfile2].
-2. Create a folder called `swc-python` in your computer's home directory.
-3. Move downloaded files to `swc-python`.
-4. Unzip the files.
-5. Log into [Google Drive](https://drive.google.com/drive/my-drive) using the Gmail account you created for this course. You may want to use a private browsing window to do this, if you usually use your Broad account when logging in to Drive.
-6. Upload the lesson content by clicking "+ New" followed by "Folder upload." Select and upload the `swc-python` folder you just created.
+1. Unzip the file, which will create a directory called `data`.
+1. Create a folder called `swc-python` in your computer's home directory.
+1. Move the `data` into `swc-python`.
+1. Log into [Google Drive](https://drive.google.com/drive/my-drive) using the Gmail account you created for this course. You may want to use a private browsing window to do this, if you usually use your Broad account when logging in to Drive.
+1. Upload the lesson content by clicking "+ New" followed by "Folder upload." Select and upload the `swc-python` folder you just created.
 
-You should see a `swc-python` folder in "My Drive", with two subfolders called `data` and `code` in it.
+You should see a `swc-python` folder in "My Drive", with a subfolder called `data`.
 
 
 :::::::::::::::::::::::::::::::::::::::::: spoiler
@@ -139,7 +138,7 @@ ipython
 
   <!-- vertical spacer -->
 
-## Option C: plain-vanilla Python interpreter
+## plain-vanilla Python interpreter
 
 To launch a plain-vanilla Python interpreter, execute:
 
