@@ -167,10 +167,10 @@ If did not continue in the same notebook directly from the last time you accesse
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
-cd /content/drive/MyDrive/swc-python/data/
+file_path = '/content/drive/MyDrive/swc-python/data/'
 
 import numpy
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path+'inflammation-01.csv', delimiter=',')
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

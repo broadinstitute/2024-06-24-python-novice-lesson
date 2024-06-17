@@ -30,15 +30,10 @@ If did not continue in the same notebook directly from the last time you accesse
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
-
+file_path = '/content/drive/MyDrive/swc-python/data/'
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-With your Google Drive mounted, move to the directory where you've pre-staged the data for this workshop:
-```python
-cd /content/drive/MyDrive/swc-python/data/
-```
 
 
 ```python
@@ -55,13 +50,11 @@ while `?` matches any one character.
 We can use this to get the names of all the CSV files in the current directory:
 
 ```python
-print(glob.glob('inflammation*.csv'))
+print(glob.glob(file_path+'inflammation*.csv'))
 ```
 
 ```output
-['inflammation-05.csv', 'inflammation-11.csv', 'inflammation-12.csv', 'inflammation-08.csv',
-'inflammation-03.csv', 'inflammation-06.csv', 'inflammation-09.csv', 'inflammation-07.csv',
-'inflammation-10.csv', 'inflammation-02.csv', 'inflammation-04.csv', 'inflammation-01.csv']
+['/content/drive/MyDrive/swc-python/data/inflammation-07.csv', '/content/drive/MyDrive/swc-python/data/inflammation-10.csv', '/content/drive/MyDrive/swc-python/data/inflammation-11.csv', '/content/drive/MyDrive/swc-python/data/inflammation-03.csv', '/content/drive/MyDrive/swc-python/data/inflammation-09.csv', '/content/drive/MyDrive/swc-python/data/inflammation-06.csv', '/content/drive/MyDrive/swc-python/data/inflammation-12.csv', '/content/drive/MyDrive/swc-python/data/inflammation-02.csv', '/content/drive/MyDrive/swc-python/data/inflammation-08.csv', '/content/drive/MyDrive/swc-python/data/inflammation-01.csv', '/content/drive/MyDrive/swc-python/data/inflammation-05.csv', '/content/drive/MyDrive/swc-python/data/inflammation-04.csv']
 ```
 
 As these examples show,
