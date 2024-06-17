@@ -21,6 +21,26 @@ As a final piece to processing our inflammation data, we need a way to get a lis
 in our `data` directory whose names start with `inflammation-` and end with `.csv`.
 The following library will help us to achieve this:
 
+::::::::::::::::::::::::::::::::::::::::::  spoiler
+
+## Episode Prerequisites
+
+If did not continue in the same notebook directly from the last time you accessed Google Drive, you need the following lines:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+
+```
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+With your Google Drive mounted, move to the directory where you've pre-staged the data for this workshop:
+```python
+cd /content/drive/MyDrive/swc-python/data/
+```
+
+
 ```python
 import glob
 ```
@@ -30,6 +50,8 @@ that finds files and directories whose names match a pattern.
 We provide those patterns as strings:
 the character `*` matches zero or more characters,
 while `?` matches any one character.
+
+
 We can use this to get the names of all the CSV files in the current directory:
 
 ```python
