@@ -42,6 +42,11 @@ drive.mount('/content/drive')
 
 If you leave your colab notebook or let it idle for too long, you will need to rerun the above commands to make your Google Drive accessible again.
 
+With your Google Drive mounted, move to the directory where you've pre-staged the data for this workshop:
+```python
+cd /content/drive/MyDrive/swc-python/data/
+```
+
 ## Loading data into Python
 
 To begin processing the clinical trial inflammation data, we need to load it into Python.
@@ -64,7 +69,7 @@ need for each program.
 Once we've imported the library, we can ask the library to read our data file for us:
 
 ```python
-numpy.loadtxt(fname='/content/drive/MyDrive/swc-python/data/inflammation-01.csv', delimiter=',')
+numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ```
 
 ```output

@@ -38,8 +38,9 @@ notebook at this point, you need the following lines:
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
+cd /content/drive/MyDrive/swc-python/data/
 import numpy
-data = numpy.loadtxt(fname='/content/drive/MyDrive/swc-python/data/inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
