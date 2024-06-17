@@ -33,11 +33,13 @@ import the `pyplot` module from `matplotlib` and use two of its functions to cre
 
 If you are continuing in the same notebook from the previous episode, you already
 have a `data` variable and have imported `numpy`.  If you are starting a new
-notebook at this point, you need the following two lines:
+notebook at this point, you need the following lines:
 
 ```python
+from google.colab import drive
+drive.mount('/content/drive')
 import numpy
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname='/content/drive/MyDrive/swc-python/data/inflammation-01.csv', delimiter=',')
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
