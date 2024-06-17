@@ -156,14 +156,25 @@ the value `False`, while `-1 < 0` returns the value `True`.
 
 Now that we've seen how conditionals work,
 we can use them to check for the suspicious features we saw in our inflammation data.
-We are about to use functions provided by the `numpy` module again.
-Therefore, if you're working in a new Python session, make sure to load the
-module and data with:
+If you're starting this session fresh, make sure to set up your notebook:
+
+::::::::::::::::::::::::::::::::::::::::::  spoiler
+
+## Session setup
+
+If did not continue in the same notebook directly from the last time you accessed Google Drive, you need the following lines:
 
 ```python
+from google.colab import drive
+drive.mount('/content/drive')
+file_path = '/content/drive/MyDrive/swc-python/data/'
+
 import numpy
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path+'inflammation-01.csv', delimiter=',')
 ```
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 From the first couple of plots, we saw that maximum daily inflammation exhibits
 a strange behavior and raises one unit a day.

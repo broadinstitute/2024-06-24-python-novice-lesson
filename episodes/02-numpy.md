@@ -26,6 +26,27 @@ specialized tools built up from these basic units live in
 [libraries](../learners/reference.md#library)
 that can be called upon when needed.
 
+## Accessing data in Google Drive
+
+To access the data you've uploaded to Google Drive for this workshop, you'll need to load a library developed by Google for this purpose.
+
+```python
+from google.colab import drive
+```
+
+Once the library has been loaded, you can make your Google Drive data accessible by using a command called mount:
+
+```python
+drive.mount('/content/drive')
+```
+
+If you leave your colab notebook or let it idle for too long, you will need to rerun the above commands to make your Google Drive accessible again.
+
+Save a variable with the directory where you've pre-staged the data for this workshop:
+```python
+file_path = '/content/drive/MyDrive/swc-python/data/'
+```
+
 ## Loading data into Python
 
 To begin processing the clinical trial inflammation data, we need to load it into Python.
@@ -48,7 +69,7 @@ need for each program.
 Once we've imported the library, we can ask the library to read our data file for us:
 
 ```python
-numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+numpy.loadtxt(fname=file_path+'inflammation-01.csv', delimiter=',')
 ```
 
 ```output
