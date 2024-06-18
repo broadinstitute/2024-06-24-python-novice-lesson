@@ -351,8 +351,7 @@ if not not True:
 
 Write some conditions that print `True` if the variable `a` is within 10% of the variable `b`
 and `False` otherwise.
-Compare your implementation with your partner's:
-do you get the same answer for all possible pairs of numbers?
+Try changing the values of `a` and `b`. Are your results accurate for each pair of values?
 
 :::::::::::::::  solution
 
