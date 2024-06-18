@@ -503,7 +503,9 @@ Omitting ending index: ['sep', 'oct', 'nov', 'dec']
 ::::::::::::::::::::::::::::::  callout
 ## One action, two meanings
 
-Here's an analogy: You are at a restaurant. You order a fried egg, and your friend orders French fries. Both of these are fried foods, but "frying" means something a little different in each case. To fry an egg means to cook it in a shallow pan, and to fry French fries means to drop them in a deep fryer. You could say that "frying" is an overloaded operator: what it does depends on what you do it to!
+Here's an analogy: You are at a restaurant. You order a fried egg, and your friend orders French fries. Both of these are fried foods, but "frying" means something a little different in each case. To fry an egg means to cook it in a shallow pan, and to fry French fries means to drop them in a deep fryer. 
+
+You could say that "frying" is an overloaded operator: what it does depends on what you do it to!
 :::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge

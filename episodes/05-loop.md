@@ -374,9 +374,11 @@ print(summed)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+You can use a loop to compute the value of a polynomial - no matter how many terms it has. Try the following bonus challenge if you want to see how.
 
-## Computing the Value of a Polynomial
+:::::::::::::::::::::::::::::::::::::::  spoiler
+
+## Bonus Challenge: Polynomials
 
 The built-in function `enumerate` takes a sequence (e.g. a [list](04-lists.md)) and
 generates a new sequence of the same length. Each element of the new sequence is a pair composed
@@ -420,7 +422,7 @@ for idx, coef in enumerate(coefs):
 
 :::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
