@@ -117,7 +117,8 @@ conditionals, there are a few more options to know about:
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 We can also combine tests using `and` and `or`.
-`and` is only true if both parts are true:
+
+An `and` expression is only true if both parts are true:
 
 ```python
 if (1 > 0) and (-1 >= 0):
@@ -143,9 +144,9 @@ at least one test is true
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## `True` and `False`
+## Booleans
 
-`True` and `False` are special words in Python called `booleans`,
+`True` and `False` are special words in Python. They are a type of data called `booleans`,
 which represent truth values. A statement such as `1 < 0` returns
 the value `False`, while `-1 < 0` returns the value `True`.
 
@@ -403,9 +404,11 @@ have string representations which can be printed.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+Try the following challenge if you want to learn some new operators and use your conditional writing skills at the same time.
 
-## In-Place Operators
+:::::::::::::::::::::::::::::::::::::  spoiler
+
+## Bonus Challenge: In-Place Operators
 
 Python (and most other languages in the C family) provides
 [in-place operators](../learners/reference.md#in-place-operators)
@@ -426,6 +429,8 @@ Write some code that sums the positive and negative numbers in a list separately
 using in-place operators.
 Do you think the result is more or less readable
 than writing the same without in-place operators?
+
+  <!-- vertical spacer -->
 
 :::::::::::::::  solution
 
@@ -453,7 +458,7 @@ sum needs to change, but it illustrates the use of `elif` and `pass`.
 
 :::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
