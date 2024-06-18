@@ -494,11 +494,22 @@ Using len() to get last entry: ['sep', 'oct', 'nov', 'dec']
 Omitting ending index: ['sep', 'oct', 'nov', 'dec']
 ```
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+
 
 ## Overloading
 
-`+` usually means addition, but when used on strings or lists, it means "concatenate".
+*Operator overloading* is a technical term for a situation where a single operator does different things depending on what it's applied to. 
+
+::::::::::::::::::::::::::::::  callout
+## One action, two meanings
+
+Here's an analogy: You are at a restaurant. You order a fried egg, and your friend orders French fries. Both of these are fried foods, but "frying" means something a little different in each case. To fry an egg means to cook it in a shallow pan, and to fry French fries means to drop them in a deep fryer. You could say that "frying" is an overloaded operator: what it does depends on what you do it to!
+:::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+## An Overloaded Operator
+
+`+` and  `*` are overloaded. `+` usually means addition, but when used on strings or lists, it means "concatenate".
 Given that, what do you think the multiplication operator `*` does on lists?
 In particular, what will be the output of the following code?
 
@@ -513,9 +524,6 @@ print(repeats)
 3. `[[2, 4, 6, 8, 10], [2, 4, 6, 8, 10]]`
 4. `[2, 4, 6, 8, 10, 4, 8, 12, 16, 20]`
 
-The technical term for this is *operator overloading*:
-a single operator, like `+` or `*`,
-can do different things depending on what it's applied to.
 
 :::::::::::::::  solution
 
