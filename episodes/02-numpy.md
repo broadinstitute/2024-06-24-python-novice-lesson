@@ -608,9 +608,11 @@ array([], shape=(0, 40), dtype=float64)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+If you're wondering what other operations you can perform with arrays, take a look at the following bonus challenge.
 
-## Stacking Arrays
+:::::::::::::::::::::::::::::::::::  spoiler
+
+## Bonus Challenge - Stacking Arrays
 
 Arrays can be concatenated and stacked on top of one another,
 using NumPy's `vstack` and `hstack` functions for vertical and horizontal stacking, respectively.
@@ -653,6 +655,8 @@ Write some additional code that slices the first and last columns of `A`,
 and stacks them into a 3x2 array.
 Make sure to `print` the results to verify your solution.
 
+  <!-- vertical spacer -->
+
 :::::::::::::::  solution
 
 ## Solution
@@ -679,6 +683,10 @@ D =
 
 :::::::::::::::::::::::::
 
+Alternative solution (most problems have more than one solution!):
+
+  <!-- vertical spacer -->
+
 :::::::::::::::  solution
 
 ## Solution
@@ -702,7 +710,7 @@ D =
 
 :::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
