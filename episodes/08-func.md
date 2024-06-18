@@ -196,6 +196,22 @@ temperature in Fahrenheit was: 212.0
 temperature in Kelvin was: 373.15
 ```
 
+:::::::::::::::::::::::::::::::::::::::::  callout
+## You know what I mean - right?
+
+If you're confused by the idea of variable scope, here's an analogy. Imagine that your friend sends you a message saying "I'm going on vacation. Meet me in the state capital!" You're in Massachusetts, so you go to Boston and call your friend to let them know where you are. 
+
+Your friend is confused and says "What do you mean? I'm in Sacramento!"
+
+The expression "state capital" is like a local variable. It can refer to many different cities depending on the context. To someone in Massachusetts, it means "Boston." To someone in California, it means "Sacramento."
+
+What if you have another friend who lives in Canada? Canada has provinces, not states. There is no such place that "the state capital" could possibly mean to your Canadian friend.
+
+Variable scope in Python is a little bit like this. A local variable is defined within a specific context, such as a function. Outside this context, the same variable name might mean something different, or it might mean nothing at all. Pay careful attention when you use local variables!
+
+Global variables are like saying "Meet me in Boston, Massachusetts, USA." Once you define them, you can use them in any function you want and they will mean the same thing.
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Tidying up
 
 Now that we know how to wrap bits of code up in functions,
