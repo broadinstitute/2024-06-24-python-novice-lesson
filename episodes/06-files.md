@@ -47,7 +47,7 @@ the character `*` matches zero or more characters,
 while `?` matches any one character.
 
 
-We can use this to get the names of all the CSV files in the current directory:
+We can use this to get the names of all the CSV files in the data directory:
 
 ```python
 print(glob.glob(file_path+'inflammation*.csv'))
@@ -128,7 +128,7 @@ we see the following:
 
 ![](fig/inflammation-03-imshow.svg){alt='Heat map of the third inflammation dataset. Note that there are sporadic zero values throughoutthe entire dataset, and the last patient only has zero values over the 40 day study.'}
 
-We can see that there are zero values sporadically distributed across all patients and days of the
+We can see that there are zeroes sporadically distributed across all patients and days of the
 clinical trial, suggesting that there were potential issues with data collection throughout the
 trial. In addition, we can see that the last patient in the study didn't have any inflammation
 flare-ups at all throughout the trial, suggesting that they may not even suffer from arthritis!
@@ -260,6 +260,7 @@ how to program.
 
 - Use `glob.glob(pattern)` to create a list of files whose names match a pattern.
 - Use `*` in a pattern to match zero or more characters, and `?` to match any single character.
+- Once you have a list of filenames, you can use loops to analyze the files.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
