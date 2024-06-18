@@ -493,7 +493,7 @@ But
 False
 ```
 
-Use the following Python code as your starting point:
+Use the Python code below as your starting point. (To keep it simple, we'll use the following list with only five filenames in it, but if you do it right, your code should work just as well with five hundred filenames!)
 
 ```python
 filenames = ['inflammation-01.csv',
