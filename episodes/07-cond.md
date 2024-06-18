@@ -212,7 +212,7 @@ else:
 Let's test that out:
 
 ```python
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path+'inflammation-01.csv', delimiter=',')
 
 max_inflammation_0 = numpy.amax(data, axis=0)[0]
 max_inflammation_20 = numpy.amax(data, axis=0)[20]
@@ -230,7 +230,7 @@ Suspicious looking maxima!
 ```
 
 ```python
-data = numpy.loadtxt(fname='inflammation-03.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path+'inflammation-03.csv', delimiter=',')
 
 max_inflammation_0 = numpy.amax(data, axis=0)[0]
 max_inflammation_20 = numpy.amax(data, axis=0)[20]
