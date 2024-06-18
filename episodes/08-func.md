@@ -22,6 +22,23 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::::::::  spoiler
+
+## Session setup
+
+If did not continue in the same notebook directly from the last time you accessed Google Drive, you need the following lines:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+file_path = '/content/drive/MyDrive/swc-python/data/'
+
+import numpy
+import matplotlib.pyplot
+```
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 At this point, we've seen that code can have Python make decisions about what it sees in our data. What if we want to convert some of our data, like taking a temperature in Fahrenheit and converting it to Celsius. We could write something like this for converting a single number
 
 ```python
@@ -315,7 +332,7 @@ That looks right,
 so let's try `offset_mean` on our real data:
 
 ```python
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path+'inflammation-01.csv', delimiter=',')
 print(offset_mean(data, 0))
 ```
 
@@ -456,7 +473,7 @@ In fact,
 we can pass the filename to `loadtxt` without the `fname=`:
 
 ```python
-numpy.loadtxt('inflammation-01.csv', delimiter=',')
+numpy.loadtxt(file_path+'inflammation-01.csv', delimiter=',')
 ```
 
 ```output
@@ -472,7 +489,7 @@ array([[ 0.,  0.,  1., ...,  3.,  0.,  0.],
 but we still need to say `delimiter=`:
 
 ```python
-numpy.loadtxt('inflammation-01.csv', ',')
+numpy.loadtxt(file_path+'inflammation-01.csv', ',')
 ```
 
 ```error
@@ -620,7 +637,7 @@ and eight others that do.
 If we call the function like this:
 
 ```python
-numpy.loadtxt('inflammation-01.csv', ',')
+numpy.loadtxt(file_path+'inflammation-01.csv', ',')
 ```
 
 then the filename is assigned to `fname` (which is what we want),
