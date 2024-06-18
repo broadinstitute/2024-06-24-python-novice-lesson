@@ -612,7 +612,7 @@ If you're wondering what other operations you can perform with arrays, take a lo
 
 :::::::::::::::::::::::::::::::::::  spoiler
 
-## Bonus Challenge - Stacking Arrays
+## Bonus Challenge: Stacking Arrays
 
 Arrays can be concatenated and stacked on top of one another,
 using NumPy's `vstack` and `hstack` functions for vertical and horizontal stacking, respectively.

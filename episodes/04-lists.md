@@ -376,9 +376,11 @@ list_for_slicing[-4:]
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+What if you want to make a slice consisting of every other element or every third element? If you'd like to learn how, take a look at the following bonus challenge.
 
-## Non-Continuous Slices
+:::::::::::::::::::::::::::::::::::::::  spoiler
+
+## Bonus Challenge: Non-Continuous Slices
 
 So far we've seen how to use slicing to take single blocks
 of successive entries from a sequence.
@@ -432,6 +434,8 @@ of the string)?
 I notpssgre ntesae
 ```
 
+  <!-- vertical spacer -->
+
 :::::::::::::::  solution
 
 ## Solution
@@ -453,7 +457,7 @@ beatles[::2]
 
 :::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 If you want to take a slice from the beginning of a sequence, you can omit the first index in the
 range:
