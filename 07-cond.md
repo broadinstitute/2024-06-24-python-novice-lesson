@@ -117,7 +117,8 @@ conditionals, there are a few more options to know about:
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 We can also combine tests using `and` and `or`.
-`and` is only true if both parts are true:
+
+An `and` expression is only true if both parts are true:
 
 ```python
 if (1 > 0) and (-1 >= 0):
@@ -143,9 +144,9 @@ at least one test is true
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## `True` and `False`
+## Booleans
 
-`True` and `False` are special words in Python called `booleans`,
+`True` and `False` are special words in Python. They are a type of data called `booleans`,
 which represent truth values. A statement such as `1 < 0` returns
 the value `False`, while `-1 < 0` returns the value `True`.
 
@@ -211,7 +212,7 @@ else:
 Let's test that out:
 
 ```python
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path+'inflammation-01.csv', delimiter=',')
 
 max_inflammation_0 = numpy.amax(data, axis=0)[0]
 max_inflammation_20 = numpy.amax(data, axis=0)[20]
@@ -229,7 +230,7 @@ Suspicious looking maxima!
 ```
 
 ```python
-data = numpy.loadtxt(fname='inflammation-03.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path+'inflammation-03.csv', delimiter=',')
 
 max_inflammation_0 = numpy.amax(data, axis=0)[0]
 max_inflammation_20 = numpy.amax(data, axis=0)[20]
@@ -350,8 +351,7 @@ if not not True:
 
 Write some conditions that print `True` if the variable `a` is within 10% of the variable `b`
 and `False` otherwise.
-Compare your implementation with your partner's:
-do you get the same answer for all possible pairs of numbers?
+Try changing the values of `a` and `b`. Are your results accurate for each pair of values?
 
 :::::::::::::::  solution
 
@@ -403,9 +403,11 @@ have string representations which can be printed.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+Try the following challenge if you want to learn some new operators and use your conditional writing skills at the same time.
 
-## In-Place Operators
+:::::::::::::::::::::::::::::::::::::  spoiler
+
+## Bonus Challenge: In-Place Operators
 
 Python (and most other languages in the C family) provides
 [in-place operators](../learners/reference.md#in-place-operators)
@@ -426,6 +428,8 @@ Write some code that sums the positive and negative numbers in a list separately
 using in-place operators.
 Do you think the result is more or less readable
 than writing the same without in-place operators?
+
+  <!-- vertical spacer -->
 
 :::::::::::::::  solution
 
@@ -453,7 +457,7 @@ sum needs to change, but it illustrates the use of `elif` and `pass`.
 
 :::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -488,7 +492,7 @@ But
 False
 ```
 
-Use the following Python code as your starting point:
+Use the Python code below as your starting point. (To keep it simple, we'll use the following list with only five filenames in it, but if you do it right, your code should work just as well with five hundred filenames!)
 
 ```python
 filenames = ['inflammation-01.csv',
@@ -537,15 +541,19 @@ print('other_files:', other_files)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+Try the following bonus challenge if you'd like more practice combining conditionals with loops.
 
-## Counting Vowels
+:::::::::::::::::::::::::::::::::::::::  spoiler
+
+## Bonus Challenge: Counting Vowels
 
 1. Write a loop that counts the number of vowels in a character string.
 2. Test it on a few individual words and full sentences.
 3. Once you are done, compare your solution to your neighbor's.
   Did you make the same decisions about how to handle the letter 'y'
   (which some people think is a vowel, and some do not)?
+
+  <!-- vertical spacer -->
 
 :::::::::::::::  solution
 
@@ -564,7 +572,8 @@ print('The number of vowels in this string is ' + str(count))
 
 :::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 
 
