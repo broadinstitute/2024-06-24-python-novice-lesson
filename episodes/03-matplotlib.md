@@ -40,7 +40,7 @@ from google.colab import drive
 drive.mount('/content/drive').       # You will need to grant Google several access permissions
 file_path = '/content/drive/MyDrive/swc-python/data/'
 import numpy
-data = numpy.loadtxt(fname=file_path+'inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path + 'inflammation-01.csv', delimiter=',')
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -118,7 +118,7 @@ Here are our three plots side by side:
 import numpy
 import matplotlib.pyplot
 
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path + 'inflammation-01.csv', delimiter=',')
 
 fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
 
@@ -135,8 +135,6 @@ axes2.plot(numpy.amax(data, axis=0))
 axes3.set_ylabel('min')
 axes3.plot(numpy.amin(data, axis=0))
 
-fig.tight_layout()
-
 matplotlib.pyplot.savefig('inflammation.png')
 matplotlib.pyplot.show()
 ```
@@ -147,10 +145,7 @@ The [call](../learners/reference.md#function-call) to `loadtxt` reads our data,
 and the rest of the program tells the plotting library
 how large we want the figure to be,
 that we're creating three subplots,
-what to draw for each one,
-and that we want a tight layout.
-(If we leave out that call to `fig.tight_layout()`,
-the graphs will actually be squeezed together more closely.)
+what to draw for each one.
 
 The call to `savefig` stores the plot as a graphics file. This can be
 a convenient way to store your plots for use in other documents, web
@@ -260,7 +255,7 @@ One way to do avoid this is to use the Matplotlib `drawstyle` option:
 import numpy
 import matplotlib.pyplot
 
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname=file_path + 'inflammation-01.csv', delimiter=',')
 
 fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
 
@@ -310,9 +305,9 @@ matplotlib.pyplot.show()
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::  spoiler
 
-## Moving Plots Around
+## Bonus Challenge: Moving Plots Around
 
 Modify the program to display the three plots on top of one another
 instead of side by side.
@@ -351,7 +346,7 @@ matplotlib.pyplot.show()
 
 :::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::
 
 
 
