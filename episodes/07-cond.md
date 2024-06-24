@@ -574,7 +574,13 @@ print('The number of vowels in this string is ' + str(count))
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::  spoiler
 
+## A few words
+
+Thanks for traveling with us so far! You've seen Numpy (critical for working with datasets), Matplotlib (a great way to visualize data) and a plethora of important computing fundamentals. If we run out of time cover episode 8, functions are a really powerful programming concept so we encourage you to give it a try using this website.
+
+:::::::::::::::::::::::::::::::::::::::::::
 
 
 [abs-function]: https://docs.python.org/3/library/functions.html#abs
