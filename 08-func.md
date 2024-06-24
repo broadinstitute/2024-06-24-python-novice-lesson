@@ -34,7 +34,7 @@ drive.mount('/content/drive')
 file_path = '/content/drive/MyDrive/swc-python/data/'
 
 import numpy
-import matplotlib.pyplot
+import matplotlib.pyplot as plt
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -240,7 +240,7 @@ def visualize(filename):
 
     data = numpy.loadtxt(fname=filename, delimiter=',')
 
-    fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
+    fig = plt.figure(figsize=(10.0, 3.0))
 
     axes1 = fig.add_subplot(1, 3, 1)
     axes2 = fig.add_subplot(1, 3, 2)
@@ -256,7 +256,7 @@ def visualize(filename):
     axes3.plot(numpy.amin(data, axis=0))
 
     fig.tight_layout()
-    matplotlib.pyplot.show()
+    plt.show()
 ```
 
 and another function called `detect_problems` that checks for those systematics
@@ -997,7 +997,12 @@ could be further improved to make them more readable.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::  spoiler
 
+## Congratulations
+
+You've used now Numpy (critical for working with datasets), Matplotlib (a great way to visualize data) and seen fundamental computing concepts like lists, loops, conditionals and functions. With this solid foundation, you're ready to move on to apply all of these new skills to carrying out more sophisticated bioinformatics analysis work. Don't worry if everything doesn't feel perfectly comfortable yet. We're going to have many more opportunities for practice as we move forward on our bioinformatics journey!
+:::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 

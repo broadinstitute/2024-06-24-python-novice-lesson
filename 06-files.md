@@ -17,10 +17,6 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-As a final piece to processing our inflammation data, we need a way to get a list of all the files
-in our `data` directory whose names start with `inflammation-` and end with `.csv`.
-The following library will help us to achieve this:
-
 ::::::::::::::::::::::::::::::::::::::::::  spoiler
 
 ## Episode Prerequisites
@@ -35,6 +31,9 @@ file_path = '/content/drive/MyDrive/swc-python/data/'
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+As a final piece to processing our inflammation data, we need a way to get a list of all the files
+in our `data` directory whose names start with `inflammation-` and end with `.csv`.
+The following library will help us to achieve this:
 
 ```python
 import glob
