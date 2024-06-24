@@ -19,6 +19,25 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
+## Before we begin
+
+### Open the collaborative doc for our workshop https://broad.io/cb-python-20240624  
+You'll find all the links listed below in the collaborative doc.
+![](fig/cb-python-20240624.png){alt='Workshop collaborative doc'}
+
+If you haven't completed your workshop setup please visit https://broad.io/cb-python-setup
+
+##### If you need help with setup, please put the <span style="color:fuchsia">pink post-it</span> on your computer and a TA will come help you.
+
+If you've created your colab account, downloaded the workshop data files AND uploaded it to your colab account's google drive, please put the <span style="color:lime">green post-it</span> on your computer to indicate your setup is complete.
+
+Feel free to browse today's lesson content https:/broad.io/cb-python-20240624-lesson
+![](fig/cb-python-lesson.png){alt='Workshop collaborative doc'}
+
+::::::::::::::::::::::::::::::::::::::::::
+
 ## Google colab
 
 Google colab is a web-based computational notebook hosted in the cloud by Google.

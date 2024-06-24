@@ -18,7 +18,7 @@ We will need to import our own resources into Colab, such as our simulated data.
 1. Download [python-novice-inflammation-data.zip][zipfile1]
 1. Unzip the file, which will create a directory called `data`.
 1. Create a folder called `swc-python` in your computer's home directory.
-1. Move the `data` into `swc-python`.
+1. Move the `data` folder into `swc-python`.
 1. Log into [Google Drive](https://drive.google.com/drive/my-drive) using the Gmail account you created for this course. You may want to use a private browsing window to do this, if you usually use your Broad account when logging in to Drive.
 1. Upload the lesson content by clicking "+ New" followed by "Folder upload." Select and upload the `swc-python` folder you just created.
 
@@ -27,7 +27,9 @@ You should see a `swc-python` folder in "My Drive", with a subfolder called `dat
 
 :::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Further reading
+## Further reading: colab alternatives
+
+We chose Google colab to ensure Python setup and everyone's Jupyter interface would be consistent. For your personal use, you may prefer not to use colab. Below are colab alternatives that you might consider post-workshop.
 
 ## Python interfaces
 
