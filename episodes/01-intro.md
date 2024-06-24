@@ -34,7 +34,10 @@ If you haven't completed your workshop setup please visit https://broad.io/cb-py
 If you've created your colab account, downloaded the workshop data files,  uploaded it to your colab account's google drive AND successfully run the access test, please put the <span style="color:lime">green post-it</span> on your computer to indicate your setup is complete.
 
 To run the access test, visit broad.io/cb-python-access-test, click "Copy to Drive" and, in YOUR COPY of `the`Python_workshop_data_access_test.ipynb` click the ▶️ symbol at the left hand side of the cell.
-![](fig/run_access_test.png){alt='Click the '}
+![](fig/run_access_test.png){alt='Click the ▶️ symbol'}
+
+This is what success looks like:
+![](fig/success.png){alt=''}
 
 Feel free to browse today's lesson content https:/broad.io/cb-python-20240624-lesson
 ![](fig/cb-python-lesson.png){alt='Workshop collaborative doc'}
