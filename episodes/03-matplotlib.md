@@ -37,7 +37,7 @@ notebook at this point, you need the following lines:
 
 ```python
 from google.colab import drive
-drive.mount('/content/drive')
+drive.mount('/content/drive').       # You will need to grant Google several access permissions
 file_path = '/content/drive/MyDrive/swc-python/data/'
 import numpy
 data = numpy.loadtxt(fname=file_path+'inflammation-01.csv', delimiter=',')

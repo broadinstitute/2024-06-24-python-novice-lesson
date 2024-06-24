@@ -37,7 +37,7 @@ from google.colab import drive
 Once the library has been loaded, you can make your Google Drive data accessible by using a command called mount:
 
 ```python
-drive.mount('/content/drive')
+drive.mount('/content/drive').       # You will need to grant Google several access permissions
 ```
 
 If you leave your colab notebook or let it idle for too long, you will need to rerun the above commands to make your Google Drive accessible again.

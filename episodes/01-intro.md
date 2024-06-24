@@ -19,6 +19,51 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Google colab
+
+Google colab is a web-based computational notebook hosted in the cloud by Google.
+Much like a lab notebook where a wet-lab experimentalist might have both the 
+experimental protocol and notes on the specific experiment, a Jupyter notebook
+allows you to have code and notes in the same notebook.
+
+Visit https://colab.research.google.com/ and click on `Examples` or, if you're already in colab, `File -> Open notebook`. Then in the resulting window, click on `Examples`.
+
+Google offers many example notebooks:    
+
+![](fig/colab_resources.png){alt='Partial listing of example notebooks offered by Google colab'}  
+
+When you first open a colab notebook, it may not be ready to execute code. Click on `Connect` (circled in figure) to connect to a hosted runtime. When you see a green checkmark, you're all set to run code in your notebook.  
+
+![](fig/new_colab_notebook.png){alt='View of newly created notebook'}  
+
+
+Google offers a basic colab experience for free. Hosted runtime machines consume computing resources which will be [shut down](https://research.google.com/colaboratory/faq.html#resource-limits) if you're not active in the notebook. If you see an "Are you still there?" window during this workshop, complete the prompt so your colab notebooks stays active. 
+
+<div>
+<img src="fig/are_you_still_there.png" width="400"/>
+</div>
+
+If you see `Connect`, you've been disconnected from a hosted runtime and you'll need to reconnect. Any work you did in the notebook is now stale and you'll need to `Runtime -> Run all` (Ctrl+F9). 
+
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
+## Note on keyboard shortcuts for Mac
+
+In colab, Macs can use Ctrl+F9 OR ⌘+F9. In other Jupyter colab environments, Ctrl+F9 may not be an option for Mac. For the rest of this workshop, we'll use indicate Ctrl+\<keystroke\> for simplicity. Mac users should keep in mind that using Command (⌘) in lieu of Ctrl is an option. 
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: spoiler
+
+## Disabling the Generative AI feature
+
+Notice in the code cell, the word <ins>generate</ins> is a hyperlink to colab's 
+new generative AI feature. Because this is a little distracting when you accidentally 
+click on the link, we recommend you disable this feature during the workshop. 
+
+Click on the settings ⚙️ icon in the upper right hand corner of your colae notebook.
+Select `AI Assistance` and check "Hide generative AI features".
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Variables
 
 Any Python interpreter can be used as a calculator:
@@ -31,7 +76,19 @@ Any Python interpreter can be used as a calculator:
 23
 ```
 
-This is great but not very interesting.
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
+## Run code cell and insert new cell (Alt/Option + Enter)
+
+In Jupyter notebook, there are many ways to run a code cell and insert a new cell.  
+To do this with one keyboard shortcut, Alt/Option + Enter.
+
+Alternatively, you can Ctrl + Enter to run the currently selected cell. Then use the Escape key to enter `Command mode`, then press `B` to insert a new cell below the current cell (or `A` to insert above the current cell).
+
+Using the graphical interface in colab, you can click the ▶️ symbol at the left hand side of the cell. Then click the `+Code` button.
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Doing arithmetic using Python is ok but not very interesting.
 To do anything useful with data, we need to assign its value to a *variable*.
 In Python, we can [assign](../learners/reference.md#assign) a value to a
 [variable](../learners/reference.md#variable), using the equals sign `=`.
