@@ -167,7 +167,7 @@ If did not continue in the same notebook directly from the last time you accesse
 
 ```python
 from google.colab import drive
-drive.mount('/content/drive')
+drive.mount('/content/drive') # You will need to grant Google several access permissions
 file_path = '/content/drive/MyDrive/swc-python/data/'
 
 import numpy
