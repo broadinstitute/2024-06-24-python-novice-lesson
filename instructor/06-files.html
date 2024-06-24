@@ -420,7 +420,7 @@ this:</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Episode Prerequisites </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>If did not continue in the same notebook directly from the last time
 you accessed Google Drive, you need the following lines:</p>
@@ -450,7 +450,7 @@ directory:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="bu">print</span>(glob.glob(file_path<span class="op">+</span><span class="st">'inflammation*.csv'</span>))</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="bu">print</span>(glob.glob(file_path <span class="op">+</span> <span class="st">'inflammation*.csv'</span>))</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -484,7 +484,7 @@ output:</p>
 <span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="im">import</span> numpy</span>
 <span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot</span>
 <span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>filenames <span class="op">=</span> <span class="bu">sorted</span>(glob.glob(<span class="st">'inflammation*.csv'</span>))</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>filenames <span class="op">=</span> <span class="bu">sorted</span>(glob.glob(file_path <span class="op">+</span> <span class="st">'inflammation*.csv'</span>))</span>
 <span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>filenames <span class="op">=</span> filenames[<span class="dv">0</span>:<span class="dv">3</span>]</span>
 <span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="cf">for</span> filename <span class="kw">in</span> filenames:</span>
 <span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>    <span class="bu">print</span>(filename)</span>
@@ -534,8 +534,8 @@ are far less suspicious than the first two datasets, however the minima
 plot shows that the third dataset minima is consistently zero across
 every day of the trial. If we produce a heat map for the third data file
 we see the following:</p>
-<figure><img src="../fig/inflammation-03-imshow.svg" alt="Heat map of the third inflammation dataset. Note that there are sporadic zero values throughoutthe entire dataset, and the last patient only has zero values over the 40 day study." class="figure mx-auto d-block"></figure><p>We can see that there are zero values sporadically distributed across
-all patients and days of the clinical trial, suggesting that there were
+<figure><img src="../fig/inflammation-03-imshow.svg" alt="Heat map of the third inflammation dataset. Note that there are sporadic zero values throughoutthe entire dataset, and the last patient only has zero values over the 40 day study." class="figure mx-auto d-block"></figure><p>We can see that there are zeroes sporadically distributed across all
+patients and days of the clinical trial, suggesting that there were
 potential issues with data collection throughout the trial. In addition,
 we can see that the last patient in the study didn’t have any
 inflammation flare-ups at all throughout the trial, suggesting that they
@@ -560,7 +560,7 @@ difference between the leftmost plots of the first two figures.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -569,7 +569,7 @@ difference between the leftmost plots of the first two figures.</p>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="im">import</span> numpy</span>
 <span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot</span>
 <span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>filenames <span class="op">=</span> <span class="bu">sorted</span>(glob.glob(<span class="st">'inflammation*.csv'</span>))</span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>filenames <span class="op">=</span> <span class="bu">sorted</span>(glob.glob(file_path <span class="op">+</span> <span class="st">'inflammation*.csv'</span>))</span>
 <span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a></span>
 <span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>data0 <span class="op">=</span> numpy.loadtxt(fname<span class="op">=</span>filenames[<span class="dv">0</span>], delimiter<span class="op">=</span><span class="st">','</span>)</span>
 <span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>data1 <span class="op">=</span> numpy.loadtxt(fname<span class="op">=</span>filenames[<span class="dv">1</span>], delimiter<span class="op">=</span><span class="st">','</span>)</span>
@@ -600,7 +600,7 @@ below:</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>filenames <span class="op">=</span> glob.glob(<span class="st">'inflammation*.csv'</span>)</span>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>filenames <span class="op">=</span> glob.glob(file_path <span class="op">+</span> <span class="st">'inflammation*.csv'</span>)</span>
 <span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>composite_data <span class="op">=</span> numpy.zeros((<span class="dv">60</span>, <span class="dv">40</span>))</span>
 <span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="cf">for</span> filename <span class="kw">in</span> filenames:</span>
 <span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>    <span class="co"># sum each new file's data into composite_data as it's read</span></span>
@@ -618,7 +618,7 @@ patients.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -627,7 +627,7 @@ patients.</p>
 <span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="im">import</span> numpy</span>
 <span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot</span>
 <span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>filenames <span class="op">=</span> glob.glob(<span class="st">'inflammation*.csv'</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>filenames <span class="op">=</span> glob.glob(file_path <span class="op">+</span> <span class="st">'inflammation*.csv'</span>)</span>
 <span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a>composite_data <span class="op">=</span> numpy.zeros((<span class="dv">60</span>, <span class="dv">40</span>))</span>
 <span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a></span>
 <span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a><span class="cf">for</span> filename <span class="kw">in</span> filenames:</span>
@@ -700,6 +700,7 @@ Dr. Maverick and continue to use the data to learn how to program.</p>
 names match a pattern.</li>
 <li>Use <code>*</code> in a pattern to match zero or more characters,
 and <code>?</code> to match any single character.</li>
+<li>Use a list of filenames and loops to analyze multiple files.</li>
 </ul></div>
 </div>
 </div>
