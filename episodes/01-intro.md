@@ -43,13 +43,13 @@ Google offers a basic colab experience for free. Hosted runtime machines consume
 <img src="fig/are_you_still_there.png" width="400"/>
 </div>
 
-If you see `Connect`, you've been disconnected from a hosted runtime and you'll need to reconnect. Any work you did in the notebook is now stale and you'll need to `Runtime -> Run all` (Ctrl+F9). 
+If you see `Connect` or `Reconnect`, you've been disconnected from a hosted runtime and you'll need to reconnect. Any work you did in the notebook is likely to be stale and you'll need to `Runtime -> Run all` (Ctrl+F9). 
 
 :::::::::::::::::::::::::::::::::::::::::: spoiler
 
 ## Note on keyboard shortcuts for Mac
 
-In colab, Macs can use Ctrl+F9 OR ⌘+F9. In other Jupyter colab environments, Ctrl+F9 may not be an option for Mac. For the rest of this workshop, we'll use indicate Ctrl+\<keystroke\> for simplicity. Mac users should keep in mind that using Command (⌘) in lieu of Ctrl is an option. 
+In colab, Macs can use Ctrl+F9 OR ⌘+F9. In other Jupyter notebook environments, Ctrl+F9 may not be an option for Mac. For the rest of this workshop, we'll use indicate Ctrl+\<keystroke\> for simplicity. Mac users should keep in mind that using Command (⌘) in lieu of Ctrl is an option. 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: spoiler
@@ -60,7 +60,7 @@ Notice in the code cell, the word <ins>generate</ins> is a hyperlink to colab's
 new generative AI feature. Because this is a little distracting when you accidentally 
 click on the link, we recommend you disable this feature during the workshop. 
 
-Click on the settings ⚙️ icon in the upper right hand corner of your colae notebook.
+Click on the settings ⚙️ icon in the upper right hand corner of your colab notebook.
 Select `AI Assistance` and check "Hide generative AI features".
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
